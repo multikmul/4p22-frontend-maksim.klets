@@ -1,1 +1,0 @@
-# 4p22-frontend-maksim.klets
