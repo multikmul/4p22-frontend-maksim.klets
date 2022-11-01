@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background: #1B2473;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container__form {
+    display: flex;
+    justify-content: center;
+    color: #787878;
+}
+
+
+.container__label-mail {
+    color: #787878;
+}
+
+.container__input-mail {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    color: #CCCCCC;
+    font-weight: bold;
+    border: 2px solid #787878;
+    border-radius: 10px;
+}
+
+.container__input-mail::placeholder {
+    color: #CCCCCC;
+}
+
+.container__label-password {
+    color: #787878;
+}
+
+.container__input-password {
+    background: #FFFFFF;
+    color: #CCCCCC;
+    font-weight: bold;
+    border: 2px solid #787878;
+    border-radius: 10px;
+}
+
+.container__input-password::placeholder {
+    color: #CCCCCC;
+}
+
+.container-checkbox {
+    position: relative;
+}
+
+.container-checkbox__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container-checkbox__input:checked + label::before {
+    opacity: 1;
+}
+
+.container-checkbox__label {
+    color: #787878;
+    font-weight: 300;
+}
+
+.container-checkbox__label::before {
+    content: '';
+    left: 3px;
+    top: 3px;
+    opacity: 0;
+    transition: .2 opacity;
+}
+
+.container-button__enter {
+    border-radius: 10px;
+    background: #1A226B;
+    color: #FFFFFF;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: calc(728/768*100vw);
+        height: calc(697/768*100vw);
+        padding-left: calc(45/768*100vw);
+        padding-right: calc(45/768*100vw);
+        margin-left: calc(20/768*100vw);
+        margin-right: calc(20/768*100vw);
+        margin-top: calc(20/768*100vw);
+    }
+
+    .container-form__enter {
+        margin-top: calc(38/768*100vw);
+        font-size: calc(60/768*100vw);
+    }
+
+    .container__label-mail {
+        display: block;
+        margin-top: calc(13/768*100vw);
+        font-size: calc(24/768*100vw);
+    }
+
+    .container__input-mail {
+        margin-top: calc(8/768*100vw);
+        width: 100%;
+        height: calc(49/768*100vw);
+        font-size: calc(28/768*100vw);
+    }
+
+    .container__label-password {
+        display: block;
+        margin-top: calc(11/768*100vw);
+        font-size: calc(24/768*100vw)
+    }
+
+    .container__input-password {
+        margin-top: calc(8/768*100vw);
+        width: 100%;
+        height: calc(49/768*100vw);
+        font-size: calc(28/768*100vw);
+    }
+
+    .container__checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: calc(19/768*100vw);
+    }
+
+    .container-checkbox__input {
+        width: calc(32/768*100vw);
+        height: calc(32/768*100vw);
+    }
+
+    .container-checkbox__label {
+        padding-left: calc(50/768*100vw);
+        padding-top: calc(7/768*100vw);
+        font-size: calc(18/768*100vw);
+    }
+
+    .container-checkbox__label::before {
+        position: absolute;
+        top: calc(345/768*100vw);
+        left: calc(65/768*100vw);
+        width: calc(32/768*100vw);
+        height: calc(32/768*100vw);
+        border-radius: calc(7/768*100vw);
+    }
+
+    .container__button {
+        display: flex;
+        justify-content: center;
+        margin-top: calc(64/768*100vw);
+    }
+
+    .container-button__enter {
+        width: calc(220/768*100vw);
+        height: calc(80/768*100vw);
+        font-size: calc(32/768*100vw);
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+    .container {
+        width: calc(600/1440*100vw);
+        height: calc(412/1440*100vw);
+        padding-left: calc(45/1440*100vw);
+        padding-right: calc(46/1440*100vw);
+        margin-top: calc(82/1440*100vw);
+        margin-left: calc(412/1440*100vw);
+    }
+
+    .container-form__enter {
+        margin-top: calc(26/1440*100vw);
+        font-size: calc(50/1440*100vw);
+    }
+
+    .container__label-mail {
+        display: block;
+        margin-top: calc(17/1440*100vw);
+        font-size: calc(16/1440*100vw);
+    }
+
+    .container__input-mail {
+        margin-top: calc(3/1440*100vw);
+        width: 100%;
+        height: calc(49/1440*100vw);
+        font-size: calc(28/1440*100vw);
+    }
+
+    .container__label-password {
+        display: block;
+        margin-top: calc(13/1440*100vw);
+        font-size: calc(16/1440*100vw);
+    }
+
+    .container__input-password {
+        margin-top: calc(3/1440*100vw);
+        width: 100%;
+        height: calc(49/1440*100vw);
+        font-size: calc(28/1440*100vw);
+    }
+
+    .container__checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: calc(16/1440*100vw);
+    }
+
+    .container-checkbox__input {
+        width: calc(24/1440*100vw);
+        height: calc(24/1440*100vw);
+    }
+
+    .container-checkbox__label {
+        padding-left: calc(40/1440*100vw);
+        padding-top: calc(5/1440*100vw);
+        font-size: calc(14/1441*100vw);
+    }
+
+    .container-checkbox__label::before {
+        position: absolute;
+        left: calc(457/1440*100vw);
+        top: calc(356/1440*100vw);
+        width: calc(24/1440*100vw);
+        height: calc(24/1440*100vw);
+        border-radius: calc(7/1440*100vw);
+    }
+
+    .container__button {
+        display: flex;
+        justify-content: center;
+        margin-top: calc(40/1440*100vw);
+    }
+
+    .container-button__enter {
+        width: calc(180/1440*100vw);
+        height: calc(52/1440*100vw);
+        font-size: calc(24/1440*100vw);
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (min-width: 1441px) {
+    .container {
+        width: calc(600/1441*100vw);
+        height: calc(412/1441*100vw);
+        padding-left: calc(45/1441*100vw);
+        padding-right: calc(46/1441*100vw);
+        margin-top: calc(82/1441*100vw);
+        margin-left: calc(412/1441*100vw);
+    }
+
+    .container-form__enter {
+        margin-top: calc(26/1441*100vw);
+        font-size: calc(50/1441*100vw);
+    }
+
+    .container__label-mail {
+        display: block;
+        margin-top: calc(17/1441*100vw);
+        font-size: calc(16/1441*100vw);
+    }
+
+    .container__input-mail {
+        margin-top: calc(3/1441*100vw);
+        width: 100%;
+        height: calc(49/1441*100vw);
+        font-size: calc(28/1441*100vw);
+    }
+
+    .container__label-password {
+        display: block;
+        margin-top: calc(13/1441*100vw);
+        font-size: calc(16/1441*100vw);
+    }
+
+    .container__input-password {
+        margin-top: calc(3/1441*100vw);
+        width: 100%;
+        height: calc(49/1441*100vw);
+        font-size: calc(28/1441*100vw);
+    }
+
+    .container__checkbox {
+        display: flex;
+        align-items: center;
+        margin-top: calc(16/1441*100vw);
+    }
+
+    .container-checkbox__input {
+        width: calc(24/1441*100vw);
+        height: calc(24/1441*100vw);
+    }
+
+    .container-checkbox__label {
+        padding-left: calc(40/1441*100vw);
+        padding-top: calc(5/1441*100vw);
+        font-size: calc(14/1441*100vw);
+    }
+
+    .container-checkbox__label::before {
+        position: absolute;
+        left: calc(457/1441*100vw);
+        top: calc(356/1441*100vw);
+        width: calc(24/1441*100vw);
+        height: calc(24/1441*100vw);
+        border-radius: calc(7/1441*100vw);
+    }
+
+    .container__button {
+        display: flex;
+        justify-content: center;
+        margin-top: calc(40/1441*100vw);
+    }
+
+    .container-button__enter {
+        width: calc(180/1441*100vw);
+        height: calc(52/1441*100vw);
+        font-size: calc(24/1441*100vw);
+        font-weight: bold;
+    }
+
+}
