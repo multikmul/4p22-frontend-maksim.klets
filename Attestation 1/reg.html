@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./reg.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body class="body">
+
+    <header class="header">
+            <img class="header-logo" src="./images/logo.svg" alt="logo">
+            <p class="header-name_site">PCS Frontend</p>
+            <div class="header-reg_log">
+                <a href="./reg.html" class="header-reg_log__reg">Регистрация</a>
+                <a href="./index.html" class="header-reg_log__log">Вход</a>
+            </div>
+    </header>
+
+    <main class="main">
+        <div class="main-container">
+            <h1 class="main-container__input">
+                Регистрация
+            </h1>
+            <div class="main-container__email">
+                <label class="main-container__label_email" for="input_email">Email</label>
+                <input class="main-container__input_email" type="email" name="email" id="input_email" required placeholder="Введите email">
+            </div>
+            <div class="main-container__pass">
+                <label for="input_password" class="main-container__label_password">Пароль</label>
+                <input class="main-container__input_pass" type="password" name="password" id="input_password" required placeholder="Введите пароль">
+            </div>
+            <div class="main-container__confirm_pass">
+                <label for="input_password" class="main-container__label_confirm_password">Подтверждение пароля</label>
+                <input class="main-container__input_confirm_pass" type="password" name="password" id="input_password" required placeholder="Подтвердите пароль">
+            </div>
+            <div class="main-container__gender">
+                <legend class="main-container__legend">Пол</legend>
+                <div class="main-container__radio_gender">
+                    <input type="radio" class="main-container__input_gender" name="gender" value="male" id="male" checked>
+                    <label class="main-container__label_gender" for="male">Мужчина</label>
+                </div>
+                <div class="main-container__radio_gender">
+                    <input type="radio" class="main-container__input_gender" name="gender" value="female" id="female">
+                    <label class="main-container__label_gender" for="female">Женщина</label>
+                </div>
+            </div>
+            <div class="main-container__resume">
+                <label for="input_resume" class="main-container__label_resume">О себе</label>
+                <textarea class="main-container__input_resume" name="about" id="input_resume" placeholder="Расскажите о себе..."></textarea>
+            </div>
+
+            <div class="main-container__agree">
+                <input class="main-container__checkbox_agree" id="checkbox_agree" type="checkbox" name="checkbox_agree" required>
+                <label class="main-container__agree_text" for="checkbox_agree">Я согласен получать обновления на почту</label>
+            </div>
+
+            <div class="main-container__button">
+                <a href="#">Регистрация</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

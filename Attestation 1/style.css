@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Robotobold;
+    color: #787878;
+    padding: 0;
+}
+
+.header{
+    height: calc(80 / 1440 * 100vw);
+    display: flex;
+    box-shadow: 0px calc(4 / 1440 * 100vw) calc(4 / 1440 * 100vw) rgba(0, 0, 0, 0.25);
+    font-family: Inter-Bold;
+    align-items: center;
+}
+
+.header-logo{
+    margin-top: calc(5 / 1440 * 100vw);
+    width: calc(222 / 1440 * 100vw);
+    margin-left: calc(30 / 1440 * 100vw);
+}
+
+.header-name_site{
+    margin-left: calc(30 / 1440 * 100vw);
+    margin-top: calc(5 / 1440 * 100vw);
+    flex-grow: 1;
+    font-size: calc(36 / 1440 * 100vw);
+}
+
+.header-reg_log{
+    margin-right: calc(27 / 1440 * 100vw);
+    display: flex;
+    font-size: calc(24 / 1440 * 100vw);
+    
+}
+
+.header-reg_log a:hover{
+    color: #2c38a5;
+}
+
+.header-reg_log__reg{
+    text-decoration: none;
+    color: #787878;
+}
+
+
+
+.header-reg_log__log{
+    margin-left: calc(27 / 1440 * 100vw);
+    text-decoration: none;
+    color: #1A226B;
+}
+
+.main-container{
+    width: calc(600 / 1440 * 100vw);
+    margin: calc(125 / 1440 * 100vw) auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px calc(40 / 1440 * 100vw) calc(10 / 1440 * 100vw) rgba(0, 0, 0, 0.25);
+    padding: calc(20 / 1440 * 100vw);
+    padding-bottom: calc(33 / 1440 * 100vw);
+    display: flexbox;
+    justify-content: center;
+}
+
+.main-container__input{
+    font-weight: 900;
+    font-size: calc(50 / 1440 * 100vw);
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: calc(9 /1440 * 100vw);
+}
+
+.main-container__email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: calc(9 / 1440 * 100vw);
+}
+
+.main-container__label_email{
+    font-size: calc(16 / 1440 * 100vw);
+    font-weight: 700;
+    margin: 0 0 calc(2 /1440 * 100vw) calc(34 /1440 * 100vw);
+}
+
+.main-container__input_email{
+    width: calc(510 / 1440 * 100vw);
+    height: calc(49 / 1440 * 100vw);
+    border: 2px solid #787878;
+    margin: 0 auto;
+    font-size: calc(28 / 1440 * 100vw);
+    font-weight: 700;
+    color: #787878;
+    padding-left: calc(15 / 1440 * 100vw);
+}
+
+.main-container input:focus-visible{
+    outline: 0;
+}
+
+.main-container__pass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: calc(17 / 1440 * 100vw);
+}
+
+.main-container__label_password{
+    font-size: calc(16 / 1440 * 100vw);
+    font-weight: 700;
+    margin: 0 0 calc(4 /1440 * 100vw) calc(34 /1440 * 100vw);
+}
+
+.main-container__input_pass{
+    width: calc(510 / 1440 * 100vw);
+    height: calc(49 / 1440 * 100vw);
+    border: 2px solid #787878;
+    margin: 0 auto;
+    font-size: calc(28 / 1440 * 100vw);
+    font-weight: 700;
+    color: #787878;
+    padding-left: calc(15 / 1440 * 100vw);
+}
+
+.main-container__button{
+    display: flex;
+    background-color: #1A226B;
+    width: calc(180 / 1440 * 100vw);
+    height: calc(52 / 1440 * 100vw);
+    text-align: center;
+    margin: calc(52 / 1440 * 100vw) auto calc(4 / 1440 * 100vw);
+}
+
+.main-container__button:hover{
+    background-color: #2c38a5;
+}
+
+.main-container__button a{
+    padding: 0;
+    margin: calc(11 / 1440 * 100vw) auto;
+    font-size: calc(24 / 1440 * 100vw);
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+::placeholder{
+    color: #CCCCCC;
+}
+
+@media screen and (max-width:768px){
+
+    .header{
+        height: calc(80 / 768 * 100vw);
+        box-shadow: 0px calc(4 / 768 * 100vw) calc(4 / 768 * 100vw) rgba(0, 0, 0, 0.25);
+        font-family: Inter-Bold;
+    }
+    
+    .header-logo{
+        margin-top: calc(-5 / 768 * 100vw);
+        width: calc(124 / 768 * 100vw);
+        margin-left: calc(20 / 768 * 100vw);
+    }
+    
+    .header-name_site{
+        margin-left: calc(34 / 768 * 100vw);
+        margin-top: calc(-5 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+    }
+    
+    .header-reg_log{
+        margin-right: calc(11 / 768 * 100vw);
+        font-size: calc(16 / 768 * 100vw);
+        
+    }
+    
+    .header-reg_log__log{
+        margin-left: calc(37 / 768 * 100vw);
+    }
+
+    .main-container{
+       margin: calc(80 / 768 * 100vw) auto;
+       width: calc(600 / 768 * 100vw);
+       box-shadow: 0px 0px calc(40 / 768 * 100vw) calc(10 / 768 * 100vw) rgba(0, 0, 0, 0.25);
+       padding: calc(20 / 768 * 100vw) calc(45 / 768 * 100vw);
+    }
+
+    .main-container__input{
+        font-weight: 700;
+        font-size: calc(50 / 768 * 100vw);
+        margin-bottom: calc(10 / 768 * 100vw);
+    }
+
+    .main-container__email{
+        margin-bottom: calc(9 / 768 * 100vw);
+    }
+
+    .main-container__label_email{
+        font-size: calc(16 / 768 * 100vw);
+        margin: 0 0 calc(2 /768 * 100vw) calc(8 / 768 * 100vw);
+    }
+    
+    .main-container__input_email{
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+    }
+
+    .main-container__pass{
+        margin-bottom: calc(-4 / 768 * 100vw);
+    }
+
+    .main-container__label_password{
+        font-size: calc(16 / 768 * 100vw);
+        margin: 0 0 calc(4 /768 * 100vw) calc(8 / 768 * 100vw);
+    }
+    
+    .main-container__input_pass{
+        width: calc(510 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        font-size: calc(28 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+    }
+
+    .main-container__button{
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        margin: calc(56 / 768 * 100vw) auto calc(17 / 768 * 100vw);
+    }
+    
+    .main-container__button a{
+        margin: calc(11 / 768 * 100vw) auto;
+        font-size: calc(24 / 768 * 100vw);
+    }
+}
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Robotobold";
+    src: url(./fonts/Robotobold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(./fonts/Inter-Bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
